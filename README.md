@@ -39,3 +39,24 @@ AI-Based Smart Trip Planner helps tourists discover the most suitable destinatio
 | **Version Control** | Git & GitHub |
 
 ---
+
+## 📸 Project Screenshots
+
+### Homepage
+
+<img width="1350" height="604" alt="homepage" src="https://github.com/user-attachments/assets/a20832c1-0242-45f1-ad1f-1d0e7d4ce02b" />
+
+
+---
+
+### AI Trip Planner Form
+
+<img width="329" height="492" alt="planner-form" src="https://github.com/user-attachments/assets/c12e8bf6-82f3-4714-b46f-233f6159a941" />
+
+---
+
+### Generated Trip Results
+
+<img width="617" height="494" alt="trip-results" src="https://github.com/user-attachments/assets/3ecc34d7-3f5b-4ffd-a4f4-cfcc1583e1c6" />
+
+---
