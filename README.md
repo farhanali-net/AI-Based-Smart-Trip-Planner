@@ -60,3 +60,65 @@ AI-Based Smart Trip Planner helps tourists discover the most suitable destinatio
 <img width="617" height="494" alt="trip-results" src="https://github.com/user-attachments/assets/3ecc34d7-3f5b-4ffd-a4f4-cfcc1583e1c6" />
 
 ---
+
+## Installation & Setup
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/farhanali-net/AI-Based-Smart-Trip-Planner.git
+```
+
+### 2. Navigate to the Project Folder
+
+```bash
+cd AI-Based-Smart-Trip-Planner
+```
+
+### 3. Create a Virtual Environment
+
+```bash
+python -m venv venv
+```
+
+### 4. Activate the Virtual Environment
+
+**Windows**
+
+```bash
+venv\Scripts\activate
+```
+
+**Linux / macOS**
+
+```bash
+source venv/bin/activate
+```
+
+### 5. Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 6. Configure Environment Variables
+
+Create a `.env` file in the project root and add your API keys:
+
+```env
+GEMINI_API_KEY=YOUR_GEMINI_API_KEY
+OPENWEATHER_API_KEY=YOUR_OPENWEATHER_API_KEY
+PEXELS_API_KEY=YOUR_PEXELS_API_KEY
+```
+
+### 7. Run the Application
+
+```bash
+python app.py
+```
+
+Open your browser and visit:
+
+```
+http://127.0.0.1:5000
+```
