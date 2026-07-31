@@ -21,3 +21,15 @@ AI-Based Smart Trip Planner helps tourists discover the most suitable destinatio
 - Local food recommendations
 - Responsive user interface
 - Database-free architecture using external APIs
+
+## Technology Stack
+
+| Category | Technology |
+|----------|------------|
+| **Frontend** | HTML5, CSS3, JavaScript |
+| **Backend** | Python, Flask |
+| **AI / LLM** | Google Gemini API |
+| **Weather API** | OpenWeather API |
+| **Image API** | Pexels API |
+| **Environment** | VS Code |
+| **Version Control** | Git & GitHub |
