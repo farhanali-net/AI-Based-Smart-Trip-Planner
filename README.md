@@ -161,7 +161,11 @@ AI-Based-Smart-Trip-Planner/
 - User authentication and profiles
 - Save trip history
 - Interactive maps integration
+- Trip booking
 - Hotel and transport booking
 - AI travel chatbot
 - Multi-language support
 - PDF itinerary export
+
+---
+
