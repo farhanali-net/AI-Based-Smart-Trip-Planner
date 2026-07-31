@@ -122,3 +122,27 @@ Open your browser and visit:
 ```
 http://127.0.0.1:5000
 ```
+
+---
+
+## Project Structure
+
+```text
+AI-Based-Smart-Trip-Planner/
+│
+├── app.py                  # Flask application
+├── requirements.txt        # Python dependencies
+├── README.md               # Project documentation
+├── .gitignore
+├── .env.example
+│
+├── static/
+│   ├── images/
+│   └── screenshots/
+│
+├── templates/
+│   └── index.html
+```
+
+---
+
