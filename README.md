@@ -174,3 +174,9 @@ AI-Based-Smart-Trip-Planner/
 **Farhan Ali**  
 **BSCS 6C**  
 **University Tech Expo Project**
+
+---
+
+## License
+
+This project is licensed under the MIT License.
