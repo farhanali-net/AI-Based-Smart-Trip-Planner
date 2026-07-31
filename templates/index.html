@@ -1,0 +1,1267 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Smart Trip Planner | Northern Pakistan</title>
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    fontFamily: {
+                        poppins: ["Poppins","sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+
+        body{
+            font-family:Poppins,sans-serif;
+        }
+
+        .glass{
+            background:rgba(255,255,255,.15);
+            backdrop-filter:blur(18px);
+            border:1px solid rgba(255,255,255,.25);
+        }
+
+        .hero{
+            background-image:
+            linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+            url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1800&q=80');
+            background-size:cover;
+            background-position:center;
+        }
+
+    </style>
+
+</head>
+
+<body class="bg-slate-50 dark:bg-slate-900 text-slate-800 dark:text-white">
+
+<!-- ========================= NAVBAR ========================= -->
+
+<nav class="fixed top-0 left-0 w-full z-50 glass">
+
+<div class="max-w-7xl mx-auto px-6 py-4">
+
+<div class="flex justify-between items-center">
+
+<a href="#" class="text-2xl font-bold text-emerald-500">
+
+<i class="fa-solid fa-mountain-sun"></i>
+
+AI Trip Planner
+
+</a>
+
+<div class="hidden md:flex gap-8 font-medium">
+
+<a href="#" class="hover:text-emerald-500">Home</a>
+
+<a href="#features" class="hover:text-emerald-500">Features</a>
+
+<a href="#about" class="hover:text-emerald-500">About</a>
+
+<a href="#destinations" class="hover:text-emerald-500">Destinations</a>
+
+<a href="#planner" class="hover:text-emerald-500">AI Planner</a>
+
+</div>
+
+<button id="darkToggle"
+class="bg-emerald-500 text-white w-10 h-10 rounded-full">
+
+<i class="fa-solid fa-moon"></i>
+
+</button>
+
+</div>
+
+</div>
+
+</nav>
+
+<!-- ================= HERO ================= -->
+
+<section class="hero h-screen flex items-center">
+
+<div class="max-w-7xl mx-auto px-8">
+
+<div class="max-w-3xl">
+
+<h1 class="text-5xl md:text-7xl font-bold text-white leading-tight">
+
+Plan Your Perfect
+
+<span class="text-emerald-400">
+
+Northern Pakistan
+
+</span>
+
+Adventure With AI
+
+</h1>
+
+<p class="text-gray-200 mt-8 text-lg leading-8">
+
+Explore Hunza, Skardu, Fairy Meadows, Deosai,
+Passu, Naran and other breathtaking destinations
+using Artificial Intelligence.
+
+Get personalized itineraries,
+weather updates,
+estimated budgets
+and travel recommendations instantly.
+
+</p>
+
+<div class="mt-10 flex gap-5">
+
+<a href="#planner"
+class="bg-emerald-500 hover:bg-emerald-600
+text-white px-8 py-4 rounded-full font-semibold">
+
+Plan My Trip
+
+</a>
+
+<a href="#about"
+class="border-2 border-white
+text-white
+px-8
+py-4
+rounded-full
+hover:bg-white
+hover:text-black">
+
+Learn More
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= FEATURES ================= -->
+
+<section id="features" class="py-24">
+
+<div class="max-w-7xl mx-auto px-8">
+
+<div class="text-center">
+
+<h2 class="text-4xl font-bold">
+
+Why Choose Our AI Planner?
+
+</h2>
+
+<p class="mt-5 text-gray-500 dark:text-gray-300">
+
+Smart planning powered by Artificial Intelligence.
+
+</p>
+
+</div>
+
+<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-16">
+
+<div class="bg-white dark:bg-slate-800 rounded-3xl shadow-xl p-8 text-center hover:-translate-y-2 transition">
+
+<i class="fa-solid fa-robot text-5xl text-emerald-500"></i>
+
+<h3 class="text-xl font-semibold mt-5">
+
+AI Trip Planning
+
+</h3>
+
+<p class="mt-4 text-gray-500 dark:text-gray-300">
+
+Generate personalized travel plans using Google's Gemini AI.
+
+</p>
+
+</div>
+
+<div class="bg-white dark:bg-slate-800 rounded-3xl shadow-xl p-8 text-center hover:-translate-y-2 transition">
+
+<i class="fa-solid fa-cloud-sun text-5xl text-sky-500"></i>
+
+<h3 class="text-xl font-semibold mt-5">
+
+Live Weather
+
+</h3>
+
+<p class="mt-4 text-gray-500 dark:text-gray-300">
+
+Get real-time weather information before traveling.
+
+</p>
+
+</div>
+
+<div class="bg-white dark:bg-slate-800 rounded-3xl shadow-xl p-8 text-center hover:-translate-y-2 transition">
+
+<i class="fa-solid fa-wallet text-5xl text-orange-500"></i>
+
+<h3 class="text-xl font-semibold mt-5">
+
+Budget Planning
+
+</h3>
+
+<p class="mt-4 text-gray-500 dark:text-gray-300">
+
+Estimate your travel expenses in Pakistani Rupees.
+
+</p>
+
+</div>
+
+<div class="bg-white dark:bg-slate-800 rounded-3xl shadow-xl p-8 text-center hover:-translate-y-2 transition">
+
+<i class="fa-solid fa-map-location-dot text-5xl text-red-500"></i>
+
+<h3 class="text-xl font-semibold mt-5">
+
+Northern Pakistan
+
+</h3>
+
+<p class="mt-4 text-gray-500 dark:text-gray-300">
+
+Specially designed for Gilgit-Baltistan and Northern Pakistan.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= ABOUT ================= -->
+
+<section id="about"
+class="py-24 bg-gradient-to-r from-emerald-500 to-sky-500 text-white">
+
+<div class="max-w-7xl mx-auto px-8">
+
+<div class="grid lg:grid-cols-2 gap-16 items-center">
+
+<div>
+
+<h2 class="text-5xl font-bold">
+
+About The Project
+
+</h2>
+
+<p class="mt-8 leading-8">
+
+AI-Based Smart Trip Planner is a  University
+Project that helps tourists discover the most suitable
+travel destinations in Northern Pakistan.
+
+Instead of manually searching for destinations,
+users simply provide their travel preferences and the
+AI recommends the best location along with a complete
+day-wise itinerary.
+
+</p>
+
+<div class="grid grid-cols-2 gap-6 mt-10">
+
+<div class="glass rounded-2xl p-6">
+
+<h4 class="font-bold text-xl">
+
+Frontend
+
+</h4>
+
+<p class="mt-3">
+
+HTML5<br>
+Tailwind CSS<br>
+JavaScript
+
+</p>
+
+</div>
+
+<div class="glass rounded-2xl p-6">
+
+<h4 class="font-bold text-xl">
+
+Backend
+
+</h4>
+
+<p class="mt-3">
+
+Python Flask<br>
+Gemini API<br>
+OpenWeather API
+
+</p>
+
+</div>
+
+<div class="glass rounded-2xl p-6">
+
+<h4 class="font-bold text-xl">
+
+Images
+
+</h4>
+
+<p class="mt-3">
+
+Pexels API
+
+</p>
+
+</div>
+
+<div class="glass rounded-2xl p-6">
+
+<h4 class="font-bold text-xl">
+
+Focus Area
+
+</h4>
+
+<p class="mt-3">
+
+Gilgit Baltistan<br>
+Northern Pakistan
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div>
+
+<img
+class="rounded-3xl shadow-2xl"
+src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1000&q=80">
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= TOP DESTINATIONS ================= -->
+
+<section id="destinations" class="py-24 bg-slate-100 dark:bg-slate-800">
+
+<div class="max-w-7xl mx-auto px-8">
+
+<div class="text-center mb-12">
+
+<h2 class="text-4xl font-bold">
+
+Top Destinations
+
+</h2>
+
+<p class="mt-4 text-gray-600 dark:text-gray-300">
+
+Discover the most beautiful tourist destinations in Northern Pakistan.
+
+</p>
+
+</div>
+
+<!-- Search & Filters -->
+
+<div class="grid md:grid-cols-3 gap-5 mb-10">
+
+<input
+id="searchDestination"
+type="text"
+placeholder="Search Destination..."
+class="p-4 rounded-xl border dark:bg-slate-700 dark:border-slate-600">
+
+<select
+id="regionFilter"
+class="p-4 rounded-xl border dark:bg-slate-700 dark:border-slate-600">
+
+<option value="all">All Regions</option>
+<option value="GB">Gilgit Baltistan</option>
+<option value="KP">KPK</option>
+<option value="AJK">AJK</option>
+
+</select>
+
+<select
+id="budgetFilter"
+class="p-4 rounded-xl border dark:bg-slate-700 dark:border-slate-600">
+
+<option value="all">All Budgets</option>
+<option value="30000">Under 30,000</option>
+<option value="50000">Under 50,000</option>
+<option value="80000">Under 80,000</option>
+
+</select>
+
+</div>
+
+<!-- Destination Cards -->
+
+<div
+id="destinationContainer"
+class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+<!-- Hunza -->
+
+<div
+class="destination bg-white dark:bg-slate-900 rounded-3xl overflow-hidden shadow-xl"
+data-name="Hunza"
+data-region="GB"
+data-budget="50000">
+
+<img
+class="h-60 w-full object-cover"
+src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=900&q=80">
+
+<div class="p-6">
+
+<h3 class="text-2xl font-bold">
+
+Hunza Valley
+
+</h3>
+
+<p class="mt-3 text-gray-500 dark:text-gray-300">
+
+Pakistan's most famous mountain valley.
+
+</p>
+
+<div class="mt-5 flex justify-between">
+
+<span>🌤 Apr-Oct</span>
+
+<span>⭐ 4.9</span>
+
+</div>
+
+<p class="mt-4 font-bold text-emerald-500">
+
+PKR 45,000 - 60,000
+
+</p>
+
+</div>
+
+</div>
+
+<!-- Skardu -->
+
+<div
+class="destination bg-white dark:bg-slate-900 rounded-3xl overflow-hidden shadow-xl"
+data-name="Skardu"
+data-region="GB"
+data-budget="70000">
+
+<img
+class="h-60 w-full object-cover"
+src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=900&q=80">
+
+<div class="p-6">
+
+<h3 class="text-2xl font-bold">
+
+Skardu
+
+</h3>
+
+<p class="mt-3 text-gray-500 dark:text-gray-300">
+
+Gateway to the highest mountains.
+
+</p>
+
+<div class="mt-5 flex justify-between">
+
+<span>🌤 May-Oct</span>
+
+<span>⭐ 4.8</span>
+
+</div>
+
+<p class="mt-4 font-bold text-emerald-500">
+
+PKR 60,000 - 80,000
+
+</p>
+
+</div>
+
+</div>
+
+<!-- Fairy Meadows -->
+
+<div
+class="destination bg-white dark:bg-slate-900 rounded-3xl overflow-hidden shadow-xl"
+data-name="Fairy Meadows"
+data-region="GB"
+data-budget="70000">
+
+<img
+class="h-60 w-full object-cover"
+src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=900&q=80">
+
+<div class="p-6">
+
+<h3 class="text-2xl font-bold">
+
+Fairy Meadows
+
+</h3>
+
+<p class="mt-3 text-gray-500 dark:text-gray-300">
+
+View of majestic Nanga Parbat.
+
+</p>
+
+<div class="mt-5 flex justify-between">
+
+<span>🌤 Jun-Sep</span>
+
+<span>⭐ 5.0</span>
+
+</div>
+
+<p class="mt-4 font-bold text-emerald-500">
+
+PKR 55,000
+
+</p>
+
+</div>
+
+</div>
+
+<!-- Deosai -->
+
+<div
+class="destination bg-white dark:bg-slate-900 rounded-3xl overflow-hidden shadow-xl"
+data-name="Deosai"
+data-region="GB"
+data-budget="60000">
+
+<img
+class="h-60 w-full object-cover"
+src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=900&q=80">
+
+<div class="p-6">
+
+<h3 class="text-2xl font-bold">
+
+Deosai National Park
+
+</h3>
+
+<p class="mt-3 text-gray-500 dark:text-gray-300">
+
+Land of Giants.
+
+</p>
+
+<div class="mt-5 flex justify-between">
+
+<span>🌤 Jul-Aug</span>
+
+<span>⭐ 4.8</span>
+
+</div>
+
+<p class="mt-4 font-bold text-emerald-500">
+
+PKR 50,000
+
+</p>
+
+</div>
+
+</div>
+
+<!-- Naran -->
+
+<div
+class="destination bg-white dark:bg-slate-900 rounded-3xl overflow-hidden shadow-xl"
+data-name="Naran"
+data-region="KP"
+data-budget="35000">
+
+<img
+class="h-60 w-full object-cover"
+src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=900&q=80">
+
+<div class="p-6">
+
+<h3 class="text-2xl font-bold">
+
+Naran
+
+</h3>
+
+<p class="mt-3 text-gray-500 dark:text-gray-300">
+
+Beautiful lakes and green valleys.
+
+</p>
+
+<div class="mt-5 flex justify-between">
+
+<span>🌤 May-Sep</span>
+
+<span>⭐ 4.7</span>
+
+</div>
+
+<p class="mt-4 font-bold text-emerald-500">
+
+PKR 35,000
+
+</p>
+
+</div>
+
+</div>
+
+<!-- Swat -->
+
+<div
+class="destination bg-white dark:bg-slate-900 rounded-3xl overflow-hidden shadow-xl"
+data-name="Swat"
+data-region="KP"
+data-budget="30000">
+
+<img
+class="h-60 w-full object-cover"
+src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=900&q=80">
+
+<div class="p-6">
+
+<h3 class="text-2xl font-bold">
+
+Swat Valley
+
+</h3>
+
+<p class="mt-3 text-gray-500 dark:text-gray-300">
+
+The Switzerland of Pakistan.
+
+</p>
+
+<div class="mt-5 flex justify-between">
+
+<span>🌤 All Year</span>
+
+<span>⭐ 4.7</span>
+
+</div>
+
+<p class="mt-4 font-bold text-emerald-500">
+
+PKR 30,000
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<!-- ================= AI TRIP PLANNER ================= -->
+
+<section id="planner" class="py-24 bg-white dark:bg-slate-900">
+
+<div class="max-w-7xl mx-auto px-8">
+
+<div class="text-center mb-14">
+
+<h2 class="text-4xl font-bold">
+
+ AI Smart Trip Planner
+
+</h2>
+
+<p class="mt-4 text-gray-500 dark:text-gray-300">
+
+Fill in your travel preferences and let AI create your perfect Northern Pakistan adventure.
+
+</p>
+
+</div>
+
+<div class="grid lg:grid-cols-2 gap-12">
+
+<!-- ================= FORM ================= -->
+
+<div class="bg-slate-100 dark:bg-slate-800 rounded-3xl shadow-xl p-8">
+
+<form id="tripForm" class="space-y-5">
+
+<input
+name="name"
+type="text"
+placeholder="Full Name"
+required
+class="w-full p-4 rounded-xl border dark:bg-slate-700">
+
+<input
+name="city"
+type="text"
+placeholder="Departure City"
+required
+class="w-full p-4 rounded-xl border dark:bg-slate-700">
+
+<input
+name="destination"
+type="text"
+placeholder="Preferred Destination (Optional)"
+class="w-full p-4 rounded-xl border dark:bg-slate-700">
+
+<input
+name="budget"
+type="number"
+placeholder="Budget (PKR)"
+required
+class="w-full p-4 rounded-xl border dark:bg-slate-700">
+
+<input
+name="days"
+type="number"
+placeholder="Number of Days"
+required
+class="w-full p-4 rounded-xl border dark:bg-slate-700">
+
+<input
+name="travelers"
+type="number"
+placeholder="Number of Travelers"
+required
+class="w-full p-4 rounded-xl border dark:bg-slate-700">
+
+<select
+name="travel_style"
+class="w-full p-4 rounded-xl border dark:bg-slate-700">
+
+<option>Solo</option>
+<option>Family</option>
+<option>Friends</option>
+<option>Honeymoon</option>
+<option>Luxury</option>
+<option>Adventure</option>
+
+</select>
+
+<select
+name="weather"
+class="w-full p-4 rounded-xl border dark:bg-slate-700">
+
+<option>Sunny</option>
+<option>Cold</option>
+<option>Snow</option>
+<option>Rainy</option>
+<option>Moderate</option>
+
+</select>
+
+<label class="font-semibold">
+
+Interests
+
+</label>
+
+<div class="grid grid-cols-2 gap-3">
+
+<label><input type="checkbox" name="interests" value="Mountains"> Mountains</label>
+
+<label><input type="checkbox" name="interests" value="Lakes"> Lakes</label>
+
+<label><input type="checkbox" name="interests" value="Camping"> Camping</label>
+
+<label><input type="checkbox" name="interests" value="Photography"> Photography</label>
+
+<label><input type="checkbox" name="interests" value="Culture"> Culture</label>
+
+<label><input type="checkbox" name="interests" value="Food"> Food</label>
+
+<label><input type="checkbox" name="interests" value="Hiking"> Hiking</label>
+
+<label><input type="checkbox" name="interests" value="Adventure Sports"> Adventure Sports</label>
+
+</div>
+
+<button
+type="submit"
+class="w-full bg-emerald-500 hover:bg-emerald-600 text-white py-4 rounded-xl text-lg font-semibold">
+
+Generate AI Trip
+
+</button>
+
+</form>
+
+</div>
+
+<!-- ================= RESULT ================= -->
+
+<div>
+
+    <!-- Loading -->
+    <div id="loading" class="hidden text-center py-20">
+
+        <div class="animate-spin rounded-full h-20 w-20 border-b-4 border-emerald-500 mx-auto"></div>
+
+        <p class="mt-5 text-lg">
+            Generating your AI itinerary...
+        </p>
+
+    </div>
+
+    <!-- Result -->
+    <div id="result"
+         class="hidden bg-slate-100 dark:bg-slate-800 rounded-3xl shadow-xl p-8">
+
+        <img
+            id="destinationImage"
+            class="rounded-2xl w-full h-64 object-cover">
+
+        <h2
+            id="destinationName"
+            class="text-3xl font-bold mt-6">
+        </h2>
+
+        <p
+            id="why"
+            class="mt-5">
+        </p>
+
+        <!-- Information Cards -->
+        <div class="grid md:grid-cols-3 gap-5 mt-8">
+
+            <!-- Weather -->
+            <div class="bg-white dark:bg-slate-700 rounded-xl p-5">
+
+                <h4 class="font-bold">
+                    Weather
+                </h4>
+
+                <p id="weatherResult"></p>
+
+            </div>
+
+            <!-- Budget -->
+            <div class="bg-white dark:bg-slate-700 rounded-xl p-5">
+
+                <h4 class="font-bold">
+                     Budget
+                </h4>
+
+                <p id="budgetResult"></p>
+
+            </div>
+
+            <!-- Recommended Dates -->
+            <div class="bg-white dark:bg-slate-700 rounded-xl p-5">
+
+                <h4 class="font-bold">
+                     Recommended Dates
+                </h4>
+
+                <p id="tripDates"></p>
+
+            </div>
+
+        </div>
+
+        <!-- Itinerary -->
+        <div class="mt-8">
+
+            <h3 class="text-2xl font-bold">
+                🗓 Day-wise Itinerary
+            </h3>
+
+            <div
+                id="itinerary"
+                class="mt-4 space-y-4">
+            </div>
+
+        </div>
+
+        <!-- Hotels -->
+        <div class="mt-8">
+
+            <h3 class="text-2xl font-bold">
+                 Hotels
+            </h3>
+
+            <ul
+                id="hotels"
+                class="list-disc ml-6 mt-3">
+            </ul>
+
+        </div>
+
+        <!-- Restaurants -->
+        <div class="mt-8">
+
+            <h3 class="text-2xl font-bold">
+                Restaurants
+            </h3>
+
+            <ul
+                id="restaurants"
+                class="list-disc ml-6 mt-3">
+            </ul>
+
+        </div>
+
+        <!-- Packing -->
+        <div class="mt-8">
+
+            <h3 class="text-2xl font-bold">
+                 Packing Checklist
+            </h3>
+
+            <ul
+                id="packing"
+                class="list-disc ml-6 mt-3">
+            </ul>
+
+        </div>
+
+        <!-- Safety -->
+        <div class="mt-8">
+
+            <h3 class="text-2xl font-bold">
+                 Safety Tips
+            </h3>
+
+            <ul
+                id="safety"
+                class="list-disc ml-6 mt-3">
+            </ul>
+
+        </div>
+
+        <!-- ================= LOCAL FOODS ================= -->
+
+<div class="mt-8">
+
+    <h3 class="text-2xl font-bold">
+         Local Foods
+    </h3>
+
+    <ul
+        id="localFoods"
+        class="list-disc ml-6 mt-3">
+    </ul>
+
+</div>
+
+<!-- ================= TRAVEL TIPS ================= -->
+
+<div class="mt-8">
+
+    <h3 class="text-2xl font-bold">
+         Travel Tips
+    </h3>
+
+    <ul
+        id="travelTips"
+        class="list-disc ml-6 mt-3">
+    </ul>
+
+</div>
+
+    </div>
+
+</div>
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="bg-slate-950 text-white py-10">
+
+<div class="max-w-7xl mx-auto px-8 text-center">
+
+<h2 class="text-2xl font-bold">
+
+ AI Smart Trip Planner
+
+</h2>
+
+<p class="mt-4 text-gray-400">
+
+Tech Expo Project | BS Computer Science
+
+</p>
+
+<p class="text-gray-500 mt-2">
+
+Designed for Northern Pakistan Tourism
+
+</p>
+
+</div>
+
+</footer>
+
+<script>
+
+const btn=document.getElementById("darkToggle");
+
+btn.onclick=()=>{
+
+document.documentElement.classList.toggle("dark");
+
+
+}
+
+
+</script>
+<script>
+
+const search=document.getElementById("searchDestination");
+const region=document.getElementById("regionFilter");
+const budget=document.getElementById("budgetFilter");
+
+function filterCards(){
+
+const cards=document.querySelectorAll(".destination");
+
+cards.forEach(card=>{
+
+const name=card.dataset.name.toLowerCase();
+
+const reg=card.dataset.region;
+
+const bud=parseInt(card.dataset.budget);
+
+const searchMatch=name.includes(search.value.toLowerCase());
+
+const regionMatch=region.value==="all"||reg===region.value;
+
+const budgetMatch=budget.value==="all"||bud<=parseInt(budget.value);
+
+card.style.display=(searchMatch&&regionMatch&&budgetMatch)?"block":"none";
+
+});
+
+}
+
+search.addEventListener("keyup",filterCards);
+
+region.addEventListener("change",filterCards);
+
+budget.addEventListener("change",filterCards);
+
+</script>
+
+<script>
+
+const form=document.getElementById("tripForm");
+
+form.addEventListener("submit",async function(e){
+
+e.preventDefault();
+
+document.getElementById("loading").classList.remove("hidden");
+
+document.getElementById("result").classList.add("hidden");
+
+const formData=new FormData(form);
+
+const interests=[];
+
+document.querySelectorAll("input[name='interests']:checked").forEach(i=>{
+
+interests.push(i.value);
+
+});
+
+const data={
+
+name:formData.get("name"),
+departure_city:formData.get("city"),
+preferred_destination:formData.get("destination"),
+budget:formData.get("budget"),
+days:formData.get("days"),
+travelers:formData.get("travelers"),
+travel_style:formData.get("travel_style"),
+weather:formData.get("weather"),
+interests:interests
+
+};
+
+try{
+
+const response=await fetch("/generate-trip",{
+
+method:"POST",
+
+headers:{
+
+"Content-Type":"application/json"
+
+},
+
+body:JSON.stringify(data)
+
+});
+
+const trip=await response.json();
+
+document.getElementById("loading").classList.add("hidden");
+
+document.getElementById("result").classList.remove("hidden");
+
+document.getElementById("destinationImage").src=trip.image;
+
+document.getElementById("destinationName").innerText=trip.destination;
+
+document.getElementById("why").innerText=trip.reason;
+
+document.getElementById("weatherResult").innerText=trip.weather;
+
+document.getElementById("budgetResult").innerText=trip.budget;
+
+document.getElementById("tripDates").innerText =
+    trip.recommended_dates || "Not Available";
+
+document.getElementById("itinerary").innerHTML="";
+
+trip.itinerary.forEach(day=>{
+
+document.getElementById("itinerary").innerHTML+=`
+
+<div class="bg-white dark:bg-slate-700 rounded-xl p-4">
+
+<h4 class="font-bold">${day.day}</h4>
+
+<p>${day.plan}</p>
+
+</div>
+
+`;
+
+});
+
+document.getElementById("hotels").innerHTML="";
+
+trip.hotels.forEach(item=>{
+
+document.getElementById("hotels").innerHTML+=`<li>${item}</li>`;
+
+});
+
+document.getElementById("restaurants").innerHTML="";
+
+trip.restaurants.forEach(item=>{
+
+document.getElementById("restaurants").innerHTML+=`<li>${item}</li>`;
+
+});
+
+document.getElementById("packing").innerHTML="";
+
+trip.packing.forEach(item=>{
+
+document.getElementById("packing").innerHTML+=`<li>${item}</li>`;
+
+});
+
+document.getElementById("safety").innerHTML="";
+
+trip.safety.forEach(item=>{
+
+document.getElementById("safety").innerHTML+=`<li>${item}</li>`;
+
+});
+
+// Local Foods
+document.getElementById("localFoods").innerHTML = "";
+
+trip.local_foods.forEach(item => {
+
+    document.getElementById("localFoods").innerHTML += `
+        <li>${item}</li>
+    `;
+
+});
+
+// Travel Tips
+document.getElementById("travelTips").innerHTML = "";
+
+trip.travel_tips.forEach(item => {
+
+    document.getElementById("travelTips").innerHTML += `
+        <li>${item}</li>
+    `;
+
+});
+
+}
+
+catch(err){
+
+document.getElementById("loading").classList.add("hidden");
+
+alert("Unable to generate trip.");
+
+console.log(err);
+
+}
+
+});
+
+</script>
+
+</body>
+</html>
