@@ -8,6 +8,8 @@ An AI-powered travel planning web application developed as a **University Tech E
 
 AI-Based Smart Trip Planner helps tourists discover the most suitable destinations in **Northern Pakistan**, especially **Gilgit-Baltistan**. Users enter their travel preferences such as budget, travel style, weather preference, and interests. The application then generates a personalized day-wise itinerary with destination recommendations, estimated budget, weather updates, hotels, restaurants, safety tips, packing checklist, and local food suggestions.
 
+---
+
 ## Features
 
 - AI-powered personalized trip recommendations using Google Gemini
@@ -22,6 +24,8 @@ AI-Based Smart Trip Planner helps tourists discover the most suitable destinatio
 - Responsive user interface
 - Database-free architecture using external APIs
 
+---
+
 ## Technology Stack
 
 | Category | Technology |
@@ -33,3 +37,5 @@ AI-Based Smart Trip Planner helps tourists discover the most suitable destinatio
 | **Image API** | Pexels API |
 | **Environment** | VS Code |
 | **Version Control** | Git & GitHub |
+
+---
