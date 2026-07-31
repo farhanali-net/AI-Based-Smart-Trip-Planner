@@ -169,3 +169,8 @@ AI-Based-Smart-Trip-Planner/
 
 ---
 
+## Author
+
+**Farhan Ali**  
+**BSCS 6C**  
+**University Tech Expo Project**
