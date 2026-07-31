@@ -17,7 +17,7 @@ AI-Based Smart Trip Planner helps tourists discover the most suitable destinatio
 - Destination images from Pexels API
 - Hotel and restaurant recommendations
 - Packing checklist based on the destination
-- 🛡️ Safety tips and travel advice
-- 🍽️ Local food recommendations
-- 📱 Responsive user interface
-- 🚫 Database-free architecture using external APIs
+- Safety tips and travel advice
+- Local food recommendations
+- Responsive user interface
+- Database-free architecture using external APIs
