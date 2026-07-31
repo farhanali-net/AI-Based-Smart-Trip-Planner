@@ -146,3 +146,13 @@ AI-Based-Smart-Trip-Planner/
 
 ---
 
+## APIs Used
+
+| API | Purpose |
+|------|---------|
+| **Google Gemini API** | Generates personalized travel itineraries using AI |
+| **OpenWeather API** | Provides live weather information |
+| **Pexels API** | Displays destination images |
+
+---
+
