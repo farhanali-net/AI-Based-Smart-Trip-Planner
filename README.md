@@ -13,10 +13,10 @@ AI-Based Smart Trip Planner helps tourists discover the most suitable destinatio
 - AI-powered personalized trip recommendations using Google Gemini
 - Day-wise travel itinerary generation
 - Estimated travel budget
-- 🌤️ Live weather updates using OpenWeather API
-- 🖼️ Destination images from Pexels API
-- 🏨 Hotel and restaurant recommendations
-- 🎒 Packing checklist based on the destination
+- Live weather updates using OpenWeather API
+- Destination images from Pexels API
+- Hotel and restaurant recommendations
+- Packing checklist based on the destination
 - 🛡️ Safety tips and travel advice
 - 🍽️ Local food recommendations
 - 📱 Responsive user interface
