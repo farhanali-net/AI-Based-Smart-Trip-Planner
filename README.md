@@ -1,4 +1,4 @@
-# AI-Based Smart Trip Planner for Northern Pakistan
+# AI-Based Smart Trip Planner for Northern Pakistan 
 
 An AI-powered travel planning web application developed as a **University Tech Expo Project**. The system uses **Google Gemini AI** to generate personalized travel itineraries based on user preferences and integrates live weather information and destination images through external APIs.
 
